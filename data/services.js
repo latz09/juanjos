@@ -2,7 +2,7 @@ import chocDipped from '../public/images/cookies/choc-dipped.jpg'
 import dippedPretzels from '../public/images/candy/dipped-pretzels.jpg'
 import cake from '../public/images/cupcakes/cake.jpg'
 import krispies from '../public/images/candy/rice-krispie.jpg'
-import brownies from '../public/images/Cookies/brownies.jpg'
+import brownies from '../public/images/cookies/brownies.jpg'
 
 export const services = [
 	{
