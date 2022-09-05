@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { RiMenu3Fill, RiCloseLine } from 'react-icons/ri';
 import { useState } from 'react';
-import { MdHouseSiding } from 'react-icons/md';
+
 import { navLinks } from '../../../data/navLinks';
+
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -11,22 +12,29 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className='shadow-md w-full  top-0 left-0 z-10'>
-			<div className='bg-customColor'>
-				<div className='max-w-7xl mx-auto flex items-center justify-between py-4 md:px-10 px-7 text-white tracking-widest'>
+		<div className='w-full  top-0 left-0 z-10'>
+			<div className=''>
+				<div className='max-w-7xl mx-auto grid grid-cols-5 items-center  pt-1 lg:px-10 px-7 text-juanjosTeal tracking-widest'>
 					<Link href={'/'}>
 						<button
-							className='hover:text-customColor duration-700 text-4xl cursor-pointer'
+							className='hover:text-opacity-70 duration-700 text-4xl cursor-pointer '
 							onClick={closeMenu}
 							aria-label='Navigate Home'
 						>
-							<MdHouseSiding />{' '}
+							<div className='py-4 grid justify-items-center text-xl lg:text-2xl tracking-widest font-semibold hover:opacity-60 transition duration-700'>
+								<div className='flex space-x-2'>
+									<span className='text-black '>Sweet</span>
+									<span className="">{`Juanjo's`}</span>
+								</div>
+								<span className="text-base text-black font-thin">Your vision made to order</span>
+								
+							</div>
 						</button>
 					</Link>
 
 					<div
 						onClick={() => setOpen(!open)}
-						className='text-3xl  cursor-pointer md:hidden'
+						className='text-3xl  cursor-pointer lg:hidden col-span-4 justify-self-end'
 					>
 						{!open ? (
 							<button
@@ -46,18 +54,18 @@ const Navbar = () => {
 					</div>
 
 					<div
-						className={` bg-customColor border-b-4 border-black md:border-none md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-700 ease-in ${
+						className={`bg-juanjosTeal shadow-lg lg:shadow-none text-white  lg:text-juanjosTeal lg:bg-white lg:flex lg:items-center lg:col-span-4 lg:justify-between absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto transition-all lg:transition-none duration-700  ease-in ${
 							open ? 'top-16' : 'top-[-490px]'
 						}`}
 					>
 						{navLinks.map((link) => (
 							<div
 								key={link.name}
-								className='md:ml-8 text-lg md:text-2xl md:my-0 my-7 text-center'
+								className='text-lg lg:text-2xl ml-12  my-7 text-center'
 								onClick={() => setOpen(!open)}
 							>
 								<Link href={link.link}>
-									<a className='hover:text-customColor duration-700 border-b pb-2 md:border-none md:pb-0'>
+									<a className='hover:text-black transition duration-700'>
 										{link.name}
 									</a>
 								</Link>

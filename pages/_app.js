@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 			<div>
 				<Layout>
           {/* Set font  */}
-					<div className='font-thin'> 
+					<div className=''> 
 						<Component {...pageProps} />
 					</div>
 				</Layout>

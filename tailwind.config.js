@@ -10,7 +10,7 @@ module.exports = {
 			custom: ['Roboto Slab', 'serif'],
 		},
 		colors: {
-			customColor: '#49BFB7',
+			juanjosTeal: '#008080',
 			black: '#000000',
 			white: '#FFFFFF',
 			gray: {

@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .nav-link {
+        @apply font-bold bg-juanjosTeal py-2 px-4 shadow-lg hover:bg-opacity-80 transition duration-700
+    
+    }
+}

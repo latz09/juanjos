@@ -1,18 +1,22 @@
 export const navLinks = [
     {
-        name: 'Page One',
+        name: 'Cupcakes',
         link: '/',
     },
     {
-        name: 'Page Two',
+        name: 'Cookies',
         link: '/',
     },
     {
-        name: 'Page Three',
+        name: 'Specialty Cakes',
         link: '/',
     },
     {
-        name: 'Page our',
+        name: 'Candies',
+        link: '/',
+    }, 
+    {
+        name: 'Events',
         link: '/',
     }, 
 
