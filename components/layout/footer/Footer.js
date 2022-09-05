@@ -1,18 +1,33 @@
 import Link from 'next/link';
 import Logo from '../../utils/Logo';
-import NavLink from '../../utils/NavLink';
+import NewWindowLink from '../../utils/NewWindowLink';
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillInstagram } from 'react-icons/ai';
 
 const Footer = () => {
 	return (
-		<div className='max-w-7xl mx-auto grid grid-cols-2 place-items-center py-6'>
-            <div>
-			<Logo />
-            </div>
-            <div>
-                <Link href={'/contact-us'} >
-                    <a className="p-4 bg-juanjosTeal shadow text-2xl text-white font-bold tracking-widest">Contact</a>
-                </Link>
-            </div>
+		<div className='max-w-7xl mx-auto grid md:grid-cols-2 place-items-center py-6 tracking-widest'>
+			<div>
+				<Logo />
+			</div>
+			<div className='grid gap-2 place-items-center'>
+				<div className='my-4  grid gap-2 w-full'>
+					<div className='flex space-x-4 md:space-x-8 text-3xl'>
+						<div className=' text-juanjosTeal'>
+							<NewWindowLink to={'https://www.facebook.com/SweetJuanjos'}>
+								<BsFacebook />
+							</NewWindowLink>
+						</div>
+						<div className=' text-juanjosTeal'>
+							<NewWindowLink to={'https://www.instagram.com/sweetjuanjos/'}>
+								<AiFillInstagram />
+							</NewWindowLink>
+						</div>
+						<span></span>
+					</div>
+				</div>
+			</div>{' '}
+			
 		</div>
 	);
 };
