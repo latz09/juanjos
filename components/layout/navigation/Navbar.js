@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { RiMenu3Fill, RiCloseLine } from 'react-icons/ri';
 import { useState } from 'react';
-
+import Logo from '../../utils/Logo'
 import { navLinks } from '../../../data/navLinks';
 
 
@@ -21,14 +21,7 @@ const Navbar = () => {
 							onClick={closeMenu}
 							aria-label='Navigate Home'
 						>
-							<div className='py-4 grid justify-items-center text-xl lg:text-2xl tracking-widest font-semibold hover:opacity-60 transition duration-700'>
-								<div className='flex space-x-2'>
-									<span className='text-black '>Sweet</span>
-									<span className="">{`Juanjo's`}</span>
-								</div>
-								<span className="text-base text-black font-thin">Your vision made to order</span>
-								
-							</div>
+							<Logo />
 						</button>
 					</Link>
 
@@ -54,7 +47,7 @@ const Navbar = () => {
 					</div>
 
 					<div
-						className={`bg-juanjosTeal shadow-lg lg:shadow-none text-white  lg:text-juanjosTeal lg:bg-white lg:flex lg:items-center lg:col-span-4 lg:justify-between absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto transition-all lg:transition-none duration-700  ease-in ${
+						className={`bg-juanjosTeal shadow-lg lg:shadow-none text-white  lg:text-juanjosTeal lg:bg-white lg:flex lg:items-center lg:col-span-4 lg:justify-between absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto z-20 transition-all lg:transition-none duration-700  ease-in ${
 							open ? 'top-16' : 'top-[-490px]'
 						}`}
 					>

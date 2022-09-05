@@ -15,10 +15,10 @@ const CakesHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-30'>
+			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-80 px-3'>
 				<div className='text-center mt-12 text-white text-2xl lg:text-3xl tracking-widest grid gap-4'>
-					<h1 className='text-5xl lg:text-7xl'>Cupcakes</h1>
-					<p className='text-xl font max-w-4xl '>
+					<h1 className='text-5xl lg:text-7xl text-juanjosTeal font-semibold '>{`Cupcakes & Specialty Cakes`}</h1>
+					<p className='text-xl lg:text-left max-w-4xl '>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
 						quis enim lobortis scelerisque fermentum.
