@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import hero from '../../../public/images/cupcakes/5cupcakes.jpg';
+import hero from '../../../public/images/cupcakes/3cupcakes.jpg';
 import NavLink from '../../utils/NavLink';
 
 const LandingHero = () => {
@@ -11,7 +11,7 @@ const LandingHero = () => {
 				priority='true'
 				layout='fill'
 				objectFit='cover'
-				objectPosition='right'
+				objectPosition='center'
 				placeholder='blur'
 			/>
 
