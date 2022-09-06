@@ -9,10 +9,10 @@ function MyApp({ Component, pageProps }) {
 				<meta httpEquiv='Content-Type' content='text/html; charSet=utf-8' />
 				<link rel='shortcut icon' href='/images/logos/favicon.jpg' />
 			</Head>
-			<div>
+			<div className="font-cinzel">
 				<Layout>
-          {/* Set font  */}
-					<div className=''> 
+					{/* Set font  */}
+					<div className=''>
 						<Component {...pageProps} />
 					</div>
 				</Layout>

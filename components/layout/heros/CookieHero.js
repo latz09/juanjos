@@ -24,7 +24,7 @@ const CookieHero = () => {
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					</p>
 					<div className='mt-8 text-2xl'>
-						<NavLink to={'/contact-us'} title={'Options'} />
+						<NavLink to={'/our-menu'} title={'Options'} />
 					</div>
 				</div>
 			</div>

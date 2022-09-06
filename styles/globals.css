@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,12 @@
 
 @layer components {
     .nav-link {
-        @apply font-bold bg-juanjosTeal py-2 px-4 shadow-lg  hover:bg-opacity-80 transition duration-700
-    
+        @apply font-bold bg-juanjosTeal py-4 px-8 shadow-lg  hover:bg-opacity-80 transition duration-700    
     }
+    .btn-toggle {
+		@apply  border bg-white border-juanjosTeal text-lg md:text-xl  text-juanjosTeal font-semibold tracking-wider shadow hover:shadow-lg  hover:bg-juanjosTeal hover:text-white transition duration-700 h-14 md:h-16 px-1;
+	}
+	.btn-toggle-active {
+		@apply bg-juanjosTeal text-white shadow-lg transition duration-700;
+	}
 }

@@ -7,7 +7,8 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			custom: ['Roboto Slab', 'serif'],
+			roboto: ['Roboto Slab', 'serif'],
+			cinzel: ['Cinzel', 'serif'],
 		},
 		colors: {
 			juanjosTeal: '#008080',

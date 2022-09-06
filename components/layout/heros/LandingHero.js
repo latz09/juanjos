@@ -4,7 +4,7 @@ import NavLink from '../../utils/NavLink';
 
 const LandingHero = () => {
 	return (
-		<div className='relative w-full h-[60vh]'>
+		<div className='relative w-full h-[90vh]'>
 			<Image
 				src={hero}
 				alt=''

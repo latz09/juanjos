@@ -1,23 +1,23 @@
 export const navLinks = [
     {
-        name: 'Cupcakes',
-        link: '/',
+        name: 'Menu',
+        link: '/our-menu',
     },
     {
-        name: 'Cookies',
-        link: '/',
+        name: 'About us',
+        link: '/about-us',
     },
-    {
-        name: 'Specialty Cakes',
-        link: '/',
-    },
-    {
-        name: 'Candies',
-        link: '/',
-    }, 
     {
         name: 'Events',
-        link: '/',
-    }, 
-
+        link: '/about-us',
+    },
+    {
+        name: 'Contact',
+        link: '/contact-us',
+    },
+    {
+        name: 'Gallery',
+        link: '/our-gallery',
+    },
+ 
 ];
