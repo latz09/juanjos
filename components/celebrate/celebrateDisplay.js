@@ -26,9 +26,9 @@ const CelebrateDisplay = () => {
 	];
 
 	return (
-		<div className='bg-juanjosTeal bg-opacity-60 py-12 tracking-widest text-white'>
+		<div className='bg-juanjosTeal bg-opacity-60 py-7 tracking-widest text-white'>
 			<div className='max-w-7xl mx-auto '>
-				<h1 className='py-8 text-6xl  text-center'>
+				<h1 className='py-8 text-4xl md:text-6xl px-1 text-left md:text-center'>
 					Every day can be a Holiday
 				</h1>
 
