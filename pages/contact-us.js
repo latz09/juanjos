@@ -1,5 +1,11 @@
+import UnderConstruction from '../components/utils/UnderConstruction';
+
 const Contact = () => {
-    return ( <div>contact page</div> );
-}
- 
+	return (
+		<div>
+			<UnderConstruction />{' '}
+		</div>
+	);
+};
+
 export default Contact;

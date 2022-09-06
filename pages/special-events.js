@@ -1,5 +1,11 @@
+import UnderConstruction from '../components/utils/UnderConstruction';
+
 const SpecialEvents = () => {
-    return ( <div>special events</div> );
-}
- 
+	return (
+		<div>
+			<UnderConstruction />
+		</div>
+	);
+};
+
 export default SpecialEvents;

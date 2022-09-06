@@ -9,7 +9,7 @@ const Gallery = () => {
 				{galleryImages.map((image) => (
 					<div
 						key={image.id}
-						className='grid items-center  scale-90 md:scale-75 shadow hover:shadow-xl hover:scale-110 transition duration-1000'
+						className='grid items-center  scale-90 md:scale-75 shadow-xl hover:shadow-2xl hover:scale-110 transition duration-1000'
 					>
 						<Image src={image.image} alt='' layout='intrinsic' />
 					</div>
