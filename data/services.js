@@ -1,15 +1,15 @@
-import chocDipped from '../public/images/cookies/choc-dipped.jpg'
-import dippedPretzels from '../public/images/candy/choc-covered.jpg'
-import cake from '../public/images/cupcakes/cake.jpg'
-import cupcake from '../public/images/cupcakes/3cupcakes.jpg'
-import krispies from '../public/images/candy/rice-krispie.jpg'
-import brownies from '../public/images/cookies/brownies.jpg'
+import chocDipped from '../public/images/cookies/choc-dipped.jpg';
+import dippedPretzels from '../public/images/candy/choc-covered.jpg';
+import cake from '../public/images/cupcakes/cake.jpg';
+import cupcake from '../public/images/cupcakes/3cupcakes.jpg';
+import krispies from '../public/images/candy/rice-krispie.jpg';
+import brownies from '../public/images/cookies/brownies.jpg';
 
 export const services = [
 	{
 		category: 'Specialty Cakes',
 		toggleName: 'cakes',
-        image: cake,
+		image: cake,
 		options: [
 			{
 				type: 'Cake Flavors',
@@ -47,7 +47,7 @@ export const services = [
 	{
 		category: 'Cupcakes',
 		toggleName: 'cupcakes',
-        image: cupcake,
+		image: cupcake,
 		options: [
 			{
 				type: 'Cake Flavors',
@@ -85,7 +85,7 @@ export const services = [
 	{
 		category: 'Cookies',
 		toggleName: 'cookies',
-        image: chocDipped,
+		image: chocDipped,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
 		options: [
 			{
@@ -97,9 +97,8 @@ export const services = [
 					'M&M',
 					'Decorated Sugar Cookies',
 					'White Chocolate macadamia nut',
-					'Snickerdoodle',					
+					'Snickerdoodle',
 					'Lemon Sugar Cookie',
-					
 				],
 			},
 		],
@@ -107,22 +106,22 @@ export const services = [
 	{
 		category: 'Candy',
 		toggleName: 'candy',
-        image: dippedPretzels,
+		image: dippedPretzels,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
 		options: [
 			{
 				type: 'Candy Options',
 				flavors: [
 					'Peanut Butter Cups',
-					'Chocolate Covered Peanuts',
 					'Chocolate covered Oreos',
+					'Chocolate Covered Peanuts',	
 					'Chocolate Covered Pretzels',
 				],
 			},
 		],
 	},
 	{
-        image: krispies,
+		image: krispies,
 		toggleName: 'rice-krispies',
 		category: 'Rice Krispie Treats',
 		blurb: 'Choose your style on a stick',
@@ -140,7 +139,7 @@ export const services = [
 	{
 		category: 'Brownies',
 		toggleName: 'brownies',
-        image: brownies,
+		image: brownies,
 		blurb: 'something about brownies',
 		options: [
 			{

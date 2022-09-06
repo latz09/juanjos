@@ -9,7 +9,7 @@
         @apply font-bold bg-juanjosTeal py-4 px-8 shadow-lg  hover:bg-opacity-80 transition duration-700    
     }
     .btn-toggle {
-		@apply  border bg-white border-juanjosTeal text-lg md:text-xl  text-juanjosTeal font-semibold tracking-wider shadow hover:shadow-lg  hover:bg-juanjosTeal hover:text-white transition duration-700 h-14 md:h-16 px-1;
+		@apply  border bg-white border-juanjosTeal text-base md:text-xl  text-juanjosTeal font-semibold tracking-wider shadow hover:shadow-lg  hover:bg-juanjosTeal hover:text-white transition duration-700 h-12 md:h-16 px-1;
 	}
 	.btn-toggle-active {
 		@apply bg-juanjosTeal text-white shadow-lg transition duration-700;

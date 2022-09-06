@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
         name: 'Events',
-        link: '/about-us',
+        link: '/special-events',
     },
     {
         name: 'Contact',
