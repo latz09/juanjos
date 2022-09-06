@@ -17,7 +17,7 @@ const LandingHero = () => {
 
 			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-50'>
 				<div className='text-center mt-12 text-white text-2xl lg:text-3xl tracking-widest grid gap-4 px-1'>
-					<h1 className='text-5xl lg:text-7xl'>{`Sweet Juanjo's`}</h1>
+					<h1 className='text-6xl lg:text-7xl'>{`Sweet Juanjo's`}</h1>
 					<p className='text-lg font max-w-4xl '>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						
