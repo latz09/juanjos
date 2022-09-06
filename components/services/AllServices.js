@@ -9,7 +9,7 @@ const AllServices = ({ services }) => {
 				<div className='max-w-7xl mx-auto grid grid-cols-2 sm:flex flex-wrap justify-center justify-items-center'>
 					{services.map((service) => (
 						<div key={service.category} className='p-2'>
-							<ServicesImage title={service.category} image={service.image} />
+							<ServicesImage title={service.category} image={service.serviceImage} />
 						</div>
 					))}
 				</div>

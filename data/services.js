@@ -1,5 +1,7 @@
 import chocDipped from '../public/images/cookies/choc-dipped.jpg';
+import chocDipped2 from '../public/images/cookies/choc-dipped-2.jpg';
 import dippedPretzels from '../public/images/candy/choc-covered.jpg';
+import cake2 from '../public/images/cupcakes/cake2.jpg';
 import cake from '../public/images/cupcakes/cake.jpg';
 import cupcake from '../public/images/cupcakes/3cupcakes.jpg';
 import krispies from '../public/images/candy/rice-krispie.jpg';
@@ -9,7 +11,8 @@ export const services = [
 	{
 		category: 'Specialty Cakes',
 		toggleName: 'cakes',
-		image: cake,
+		serviceImage: cake,
+		menuImage: cake2,
 		options: [
 			{
 				type: 'Cake Flavors',
@@ -47,7 +50,8 @@ export const services = [
 	{
 		category: 'Cupcakes',
 		toggleName: 'cupcakes',
-		image: cupcake,
+		serviceImage: cupcake,
+		menuImage: cupcake,
 		options: [
 			{
 				type: 'Cake Flavors',
@@ -85,7 +89,8 @@ export const services = [
 	{
 		category: 'Cookies',
 		toggleName: 'cookies',
-		image: chocDipped,
+		serviceImage: chocDipped,
+		menuImage: chocDipped2,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
 		options: [
 			{
@@ -106,7 +111,8 @@ export const services = [
 	{
 		category: 'Candy',
 		toggleName: 'candy',
-		image: dippedPretzels,
+		serviceImage: dippedPretzels,
+		menuImage: dippedPretzels,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
 		options: [
 			{
@@ -121,7 +127,8 @@ export const services = [
 		],
 	},
 	{
-		image: krispies,
+		serviceImage: krispies,
+		menuImage: krispies,
 		toggleName: 'rice-krispies',
 		category: 'Rice Krispie Treats',
 		blurb: 'Choose your style on a stick',
@@ -139,7 +146,8 @@ export const services = [
 	{
 		category: 'Brownies',
 		toggleName: 'brownies',
-		image: brownies,
+		serviceImage: brownies,
+		menuImage: brownies,
 		blurb: 'something about brownies',
 		options: [
 			{

@@ -7,7 +7,7 @@ const AboutBlurb = () => {
 		<div>
 			<div className='grid place-items-center py-9 px-3 lg:h-[50vh] max-w-4xl mx-auto text-black '>
 				<div className='grid gap-3 place-items-center'>
-					<div className='text-xl tracking-wider leading-8 text-justify text-gray-700'>
+					<div className='text-lg md:text-xl tracking-wider leading-7 md:leading-8 text-center md:text-justify text-gray-700'>
 						<span className='text-juanjosTeal font-bold'>{`Sweet Juanjo's`}</span>{' '}
 						is located in Stevens Point WI. We specialize in
 						<span className='text-black font-semibold'>
