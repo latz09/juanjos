@@ -17,7 +17,7 @@ const LandingOverlayHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-primary/40'>
+			<div className='relative flex justify-center items-center h-full bg-dark/60'>
 				<TextHero />
 			</div>
 		</div>
@@ -28,7 +28,7 @@ export default LandingOverlayHero;
 
 const TextHero = () => {
 	return (
-		<div className='grid place-items-center text-light'>
+		<div className='grid place-items-center text-secondary-light'>
 			<div className='grid gap-12 lg:grid-cols-2 place-items-center'>
 				<div className='grid gap-4 place-items-center'>
 					<h1 className='text-6xl lg:text-7xl  -rotate-2 font-semibold text-center '>
