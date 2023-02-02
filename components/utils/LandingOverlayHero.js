@@ -6,7 +6,7 @@ import NavLink from './NavLink';
 
 const LandingOverlayHero = () => {
 	return (
-		<div className='lg:hdden relative w-full h-[50vh] lg:h-[70vh]'>
+		<div className=' relative w-full h-[50vh] lg:h-[70vh]'>
 			<Image
 				src={image}
 				alt=''
@@ -34,7 +34,7 @@ const TextHero = () => {
 					<h1 className='text-6xl lg:text-7xl  -rotate-2 font-semibold text-center '>
 						Sweet Juanjo<span className='text-secondary-dark opacity-70'>&apos;</span>s
 					</h1>
-					<div className='hidden lg:block text-xl lg:text-2xl'>
+					<div className=' text-xl lg:text-2xl'>
 						<div className='flex items-center '>
 							Your Vision Made To Order{' '}
 							<span className='mx-2 text-5xl '>

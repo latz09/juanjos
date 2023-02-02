@@ -47,7 +47,7 @@ const MenuCard = ({ imageToUse, title }) => {
 		<Link href={'/our-menu'}>
 			<div className='grid gap-8 place-items-center text-lg  lg:text-2xl font-old bg-secondary-light p-8 w-full [&>*]:p-4'>
 				<ImageToUse image={imageToUse} />
-				<div className='bg-primary hover:scale-95  hover:bg-primary/70 transition duration-700  text-light py-2 px-4 rounded w-2/3 sm:w-full lg:w-2/3  text-center'>
+				<div className='bg-primary hover:scale-95  hover:bg-primary/70 transition duration-700  text-light py-2 px-4 h-full rounded w-2/3 sm:w-full lg:w-2/3  text-center'>
 					{title}
 				</div>
 			</div>
