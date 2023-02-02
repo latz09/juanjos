@@ -13,27 +13,20 @@ const ToggleMenu = ({ toggle, setToggle }) => {
 			toggleName: 'cookies',
 		},
 		{
-			title: 'Candy',
-			toggleName: 'candy',
+			title: 'Candy and Treats',
+			toggleName: 'treats',
 		},
-		{
-			title: 'Rice Krispies',
-			toggleName: 'rice-krispies',
-		},
-		{
-			title: 'Brownies',
-			toggleName: 'brownies',
-		},
+	
 	];
 
 	return (
 		<div className=''>
-			<div className='grid grid-cols-3 md:grid-cols-6 gap-4 justify-evenly items-center  '>
+			<div className='grid grid-cols-2	 md:grid-cols-4  gap-4 justify-evenly items-center  '>
 				{toggleButtons.map((button) => (
 					<button
 						key={button.toggleName}
-						className={`btn-toggle ${
-							toggle === button.toggleName && 'btn-toggle-active'
+						className={`btn-toggle  ${
+							toggle === button.toggleName && 'btn-toggle-active '
 						}`}
 						onClick={() => {
 							setToggle(button.toggleName);

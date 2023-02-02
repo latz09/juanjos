@@ -1,31 +1,31 @@
 import { useState, useEffect } from 'react';
+import Cakes from '../components/menu/Cakes';
+import Cookies from '../components/menu/Cookies';
+import Cupcakes from '../components/menu/Cupcakes';
 import MenuItemDisplay from '../components/menu/MenuItemDisplay';
 import ToggleMenu from '../components/menu/ToggleMenu';
+import Treats from '../components/menu/Treats';
 import NavLink from '../components/utils/NavLink';
 import { services } from '../data/services';
 
 const Menu = () => {
-	const [toggle, setToggle] = useState('cupcakes');
-	const [data, setData] = useState(toggle);
+	const [toggle, setToggle] = useState('cakes');
+	
 
-	useEffect(() => {
-		setData(toggle);
-	}, [toggle]);
+	const filterData = (x) => {
+		const filteredData = services.filter((item) => item.toggleName === x);
+		return filteredData;
+	};
+	
 	return (
 		<div className='grid gap-8 max-w-7xl mx-auto my-8'>
 			<ToggleMenu toggle={toggle} setToggle={setToggle} />
 
-			<MenuItemDisplay
-				menuData={services.filter((item) => item.toggleName === data)}
-			/>
-			<div className="md:hidden">
-				<ToggleMenu toggle={toggle} setToggle={setToggle} />
-			</div>
-
-			{/* <div className="w-1/4 mx-auto">
-                <NavLink to={'/contact-us'} title={'Order'} />
-            </div>
-           */}
+			
+			{toggle === 'cakes' && <Cakes data={ filterData('cakes')} />}
+			{toggle === 'cupcakes' && <Cupcakes data={filterData('cupcakes')} />}
+			{toggle === 'cookies' && <Cookies data={filterData('cookies')} />}
+			{toggle === 'treats' && <Treats data={filterData('treats')} />}
 		</div>
 	);
 };

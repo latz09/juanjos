@@ -3,7 +3,8 @@ import chocDipped2 from '../public/images/cookies/choc-dipped-2.jpg';
 import dippedPretzels from '../public/images/candy/choc-covered.jpg';
 import cake2 from '../public/images/cupcakes/cake2.jpg';
 import cake from '../public/images/cupcakes/cake.jpg';
-import cupcake from '../public/images/cupcakes/3cupcakes.jpg';
+import cupcake1 from '../public/images/cupcakes/3cupcakes.jpg';
+import cupcake2 from '../public/images/cupcakes/4cupcakes.jpg';
 import krispies from '../public/images/candy/rice-krispie.jpg';
 import brownies from '../public/images/cookies/brownies.jpg';
 
@@ -50,8 +51,9 @@ export const services = [
 	{
 		category: 'Cupcakes',
 		toggleName: 'cupcakes',
-		serviceImage: cupcake,
-		menuImage: cupcake,
+		serviceImage: cupcake1,
+		menuImage: cupcake1,
+		images: [cupcake1, cupcake2],
 		options: [
 			{
 				type: 'Cake Flavors',
@@ -92,25 +94,20 @@ export const services = [
 		serviceImage: chocDipped,
 		menuImage: chocDipped2,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
-		options: [
-			{
-				type: 'Cookie Flavors',
-				flavors: [
-					'Sugar',
-					'Chocolate Chip',
-					'Peanut Butter',
-					'M&M',
-					'Decorated Sugar Cookies',
-					'White Chocolate macadamia nut',
-					'Snickerdoodle',
-					'Lemon Sugar Cookie',
-				],
-			},
+		flavors: [
+			'Sugar',
+			'Chocolate Chip',
+			'Peanut Butter',
+			'M&M',
+			'Decorated Sugar Cookies',
+			'White Chocolate macadamia nut',
+			'Snickerdoodle',
+			'Lemon Sugar Cookie',
 		],
 	},
 	{
-		category: 'Candy',
-		toggleName: 'candy',
+		category: 'Candy and Treats',
+		toggleName: 'treats',
 		serviceImage: dippedPretzels,
 		menuImage: dippedPretzels,
 		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
