@@ -12,17 +12,17 @@ const Menu = () => {
 		setData(toggle);
 	}, [toggle]);
 	return (
-		<div  className="">
-		  <div>
-				<ToggleMenu toggle={toggle} setToggle={setToggle} />
-			</div>
-            <div>
-                <MenuItemDisplay menuData={services.filter(item => item.toggleName === data)}/>
-            </div>
-            <div className="text-center text-white tracking-widest text-2xl py-8">
+		<div className='grid gap-8 max-w-7xl mx-auto'>
+			<ToggleMenu toggle={toggle} setToggle={setToggle} />
+
+			<MenuItemDisplay
+				menuData={services.filter((item) => item.toggleName === data)}
+			/>
+
+			{/* <div className="w-1/4 mx-auto">
                 <NavLink to={'/contact-us'} title={'Order'} />
             </div>
-          
+           */}
 		</div>
 	);
 };

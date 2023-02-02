@@ -3,23 +3,24 @@ import Flavors from './Flavors';
 
 const MenuItemDisplay = ({ menuData }) => {
 	return (
-		<div className='my-3 md:my-7 max-w-7xl mx-auto text-juanjosTeal'>
+		<div className='py-8 '>
 			{menuData.map((item) => (
-				<div key={item.toggleName} className='grid gap-8'>
-					<div className='grid md:grid-cols-2 place-items-center'>
-						<div className=''>
-							<Image src={item.menuImage} alt={item.category} layout='intrinsic'/>
+				<div
+					key={item.toggleName}
+					className='grid md:grid-cols-3 place-items-center '
+				>
+					<div className=''>
+						<Image
+							src={item.menuImage}
+							alt={item.category}
+							layout='intrinsic'
+						/>
+					</div>
+					<div className=' flex flex-col gap-8  col-span-2'>
+						<div className='text-center text-3xl md:text-5xl font-semibold tracking-widest  text-secondary-dark/50'>
+							{item.category}
 						</div>
-						<div className="px-6 grid h-full gap-4">
-							<h1 className='text-center text-3xl md:text-5xl font-semibold tracking-widest text-gray-600'>
-								{item.category}
-							</h1>                           
-                            <div>
-                                <Flavors options={item.options}/>
-                            </div>
-                            
-						</div>
-                        
+						<Flavors options={item.options} />
 					</div>
 				</div>
 			))}

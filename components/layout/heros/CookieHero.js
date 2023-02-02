@@ -1,32 +1,38 @@
 import Image from 'next/image';
-import hero from '../../../public/images/cookies/cookies.jpg';
+import hero from '../../../public/images/cookies/choc-dipped-3.png';
 import NavLink from '../../utils/NavLink';
-
+import { motion } from 'framer-motion';
 const CookieHero = () => {
 	return (
-		<div className='relative w-full h-[80vh]'>
-			<Image
-				src={hero}
-				alt=''
-				priority='true'
-				layout='fill'
-				objectFit='cover'
-				objectPosition='center'
-				placeholder='blur'
-			/>
+		<div className='grid lg:grid-cols-3 place-items-center  gap-8 max-w-7xl mx-auto py-16'>
+			<motion.div
+				className='w-1/4 lg:w-1/2 mx-auto '
+				initial={{ scale: 0.95 }}
+				animate={{ scale: 1 }}
+				transition={{
+					delay: 0.5,
+					duration: 2,
+					ease: 'easeInOut',
+					repeat: Infinity,
+					repeatType: 'mirror',
+				}}
+			>
+				<Image
+					src={hero}
+					alt=''
+					priority='true'
+					layout=''
+					objectFit='cover'
+					objectPosition='cente'
+					placeholder='blur'
+				/>
+			</motion.div>
+			<div className='lg:col-span-2 text-xl lg:text-3xl text-center grid gap-8 text-secondary-dark tracking-wider'>
+				<h1 className='text-4xl lg:text-6xl font-semibold'>
+					Did someone say <span className=' text-primary'>cookies!?</span>
+				</h1>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-50 px-3'>
-				<div className='text-center mt-12 text-white text-2xl lg:text-3xl tracking-widest grid gap-4'>
-					<h1 className='text-5xl lg:text-6xl text-white font-semibold '>
-						Did someone say <span className='text-juanjosTeal text-6xl lg:text-7xl'>cookies!</span>
-					</h1>
-					<p className='text-xl  max-w-4xl '>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					</p>
-					<div className='mt-8 text-2xl'>
-						<NavLink to={'/our-menu'} title={'Options'} />
-					</div>
-				</div>
+				<NavLink to={'/our-menu'} title={'Flavor Menu Here!'} color='blue' />
 			</div>
 		</div>
 	);

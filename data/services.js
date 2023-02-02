@@ -120,7 +120,7 @@ export const services = [
 				flavors: [
 					'Peanut Butter Cups',
 					'Chocolate covered Oreos',
-					'Chocolate Covered Peanuts',	
+					'Chocolate Covered Peanuts',
 					'Chocolate Covered Pretzels',
 				],
 			},
@@ -158,5 +158,24 @@ export const services = [
 				],
 			},
 		],
+	},
+];
+
+export const menuPreview = [
+	{
+		category: 'Specialty Cakes',
+		toggleName: 'cakes',
+	},
+	{
+		category: 'Cupcakes',
+		toggleName: 'cupcakes',
+	},
+	{
+		category: 'Cookies',
+		toggleName: 'cookies',
+	},
+	{
+		category: 'Candy & Treats!',
+		toggleName: 'candy',
 	},
 ];

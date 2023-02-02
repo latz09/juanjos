@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-const NavLink = ({ to, title }) => {
+const NavLink = ({ to, title, color }) => {
 	return (
-		<div>
+		<div className={`nav-link ${color === 'blue' && 'bg-secondary-dark'} `}>
 			<Link href={to}>
-				<a className="nav-link">{title}</a>
+				<a >{title}</a>
 			</Link>
 		</div>
 	);

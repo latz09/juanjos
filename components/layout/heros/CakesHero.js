@@ -4,7 +4,7 @@ import NavLink from '../../utils/NavLink';
 
 const CakesHero = () => {
 	return (
-		<div className='relative w-full h-[80vh]'>
+		<div className='relative w-full h-[60vh]'>
 			<Image
 				src={hero}
 				alt=''
@@ -15,9 +15,9 @@ const CakesHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-60 px-3'>
-				<div className='text-center mt-12 text-white text-2xl lg:text-3xl tracking-widest grid gap-4'>
-					<h1 className='text-5xl lg:text-7xl text-juanjosTeal font-semibold '>{`Cupcakes & Specialty Cakes`}</h1>
+			<div className='relative flex justify-center items-center h-full bg-opacity-60 '>
+				<div className='text-center  text-white text-2xl lg:text-3xl tracking-widest grid gap-4'>
+					<h1 className='text-5xl lg:text-7xl  font-semibold '>{`Cupcakes & Specialty Cakes`}</h1>
 					<p className='text-xl lg:text-left max-w-4xl '>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam

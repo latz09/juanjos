@@ -1,75 +1,76 @@
-import myLogo from '../../public/images/mylogo.png';
-import Image from 'next/image';
-import NewWindowLink from './NewWindowLink';
-import Link from 'next/link';
+import { motion } from 'framer-motion';
+import NavLink from './NavLink';
 const UnderConstruction = () => {
 	return (
-		<div className='bg-gray-100 font-roboto text-gray-500'>
-			<h1 className='text-center text-3xl md:text-5xl pt-12 tracking-widest  text-gray-700 '>
-				Just waiting on the go ahead for this page!
-			</h1>
-			<div className='max-w-4xl mx-auto grid place-items-center text-center py-12 mb-6 gap-4 '>
-				<h1 className='text-2xl md:text-4xl'>Other Pages on your redesign to explore--</h1>
-				<div className=' flex flex-wrap sm:grid sm:grid-cols-3 gap-3 items-center px-4'>
-					<Link href={'/'}>
-						<a className='p-2 md:p-3 bg-juanjosTeal text-white md:text-xl font-bold tracking-widest'>
-							Home Page
-						</a>
-					</Link>
-					<Link href={'/our-menu'}>
-						<a className='p-2 md:p-3 bg-juanjosTeal text-white md:text-xl font-bold tracking-widest'>
-							Menu
-						</a>
-					</Link>
-					<Link href={'/our-gallery'}>
-						<a className='p-2 md:p-3 bg-juanjosTeal text-white md:text-xl font-bold tracking-widest'>
-							Gallery
-						</a>
-					</Link>
-					
+		<>
+			<div className='py-8 text-center grid gap-2'>
+				<span>Fully Customizable</span>
+				<div className="w-1/3 lg:w-1/5 mx-auto">
+					<NavLink to={'/'} title={'Home'} color='blue' />
 				</div>
 			</div>
-			<div className='grid md:grid-cols-3 max-w-5xl mx-auto place-items-center text-center'>
-				<div className='opacity-70 md:col-span-1 px-12 pb-3 md:p-0'>
-					<Image src={myLogo} alt='' layout='intrinsic' priority={true} />
-				</div>
-				<div className='md:col-span-2 grid gap-4 text-left '>
-					<h1 className='text-xl md:text-3xl mx-8  md:leading-10'>
-						We help local businesses increase organic traffic to their site by
-						building them a site as the business tool they deserve.
-					</h1>
-					<h1 className='text-xl md:text-3xl mx-8 md:leading-10 '>
-						By building your site as the business tool that it is, we increase
-						visibility, clients, and sales through organic free sources.
-					</h1>
-					<h1 className='text-xl md:text-3xl mx-8 md:leading-10 '>
-						I Look forward to working with you!
-					</h1>
-				</div>
+			<div className='h-[80vh] grid place-items-center gap-2'>
+				<Balls />
 			</div>
-			<div className='grid gap-6 md:grid-cols-2 max-w-4xl mx-auto py-20 place-items-center '>
-				<div className='grid justify-items-center'>
-					<h1 className='text-3xl py-5'>To Learn More</h1>
-					<NewWindowLink to='https://www.latzwebdesign.com/'>
-						<button className='btn bg-[#40A9A1] text-white font-bold text-xl py-4 px-4 tracking-widest shadow-lg'>
-							www.latzwebdesign.com
-						</button>
-					</NewWindowLink>
-				</div>
-				<div className='text-2xl grid gap-1  border-2 p-3 border-[#40A9A1] bg-gray-50 shadow-lg'>
-					<div className='text-3xl font-bold'>Jordan Latz</div>
-					<div className='font-bold text-gray-600'>
-						Full Stack Web Developer
-					</div>
-					<div className='text-lg'>
-						<div>715 630-5689</div>
-						<div>jordan@latzwebdesign.com</div>
-					</div>
-				</div>
-			</div>
-	
-		</div>
+		</>
 	);
 };
 
 export default UnderConstruction;
+
+const Balls = () => {
+	return (
+		<motion.div
+			className=' '
+			initial={{ opacity: 0.8, scale: 0.8 }}
+			animate={{ rotate: 360, opacity: 1, scale: 1.2 }}
+			transition={{ repeat: Infinity, duration: 4, repeatType: 'reverse' }}
+		>
+			<div className=' grid gap-2 '>
+				<motion.div
+					className='p-3   rounded-full w-full '
+					initial={{}}
+					animate={{
+						x: ['-98%', '98%'],
+						backgroundColor: ['#1865B3', '#FFD204', '#1865B3'],
+					}}
+					transition={{
+						yoyo: Infinity,
+						ease: 'easeInOut',
+						duration: 3,
+						// delay: 0.2,
+					}}
+				/>
+				<motion.div
+					className='p-3 bg-primary rounded-full w-full '
+					initial={{}}
+					animate={{
+						x: ['98%', '-98%'],
+
+						backgroundColor: ['#FF3A54', '#1865B3', '#FF3A54'],
+					}}
+					transition={{
+						yoyo: Infinity,
+						ease: 'easeInOut',
+						duration: 3,
+						// delay: 0.2,
+					}}
+				/>
+				<motion.div
+					className='p-3 bg-primary rounded-full w-full '
+					initial={{}}
+					animate={{
+						x: ['-98%', '98%'],
+						backgroundColor: ['#1865B3', '#FFD204', '#1865B3'],
+					}}
+					transition={{
+						yoyo: Infinity,
+						ease: 'easeInOut',
+						duration: 3,
+						// delay: 0.2,
+					}}
+				/>
+			</div>
+		</motion.div>
+	);
+};

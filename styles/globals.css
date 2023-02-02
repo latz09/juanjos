@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
-
+html,
+body {
+	background-color: #FFFBE8;
+	text: #1D3150;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .nav-link {
-        @apply font-bold bg-juanjosTeal py-4 px-8 shadow-lg  hover:bg-opacity-80 transition duration-700    
-    }
-    .btn-toggle {
-		@apply  border bg-white border-juanjosTeal text-base md:text-xl  text-juanjosTeal font-semibold tracking-wider shadow hover:shadow-lg  hover:bg-juanjosTeal hover:text-white transition duration-700 h-12 md:h-16 px-1;
+	.nav-link {
+		@apply font-bold bg-primary py-4 px-8 shadow-lg text-xl rounded-sm  hover:scale-110  text-light transition duration-700 text-center cursor-pointer w-full;
+	}
+	.btn-toggle {
+		@apply bg-secondary-dark text-light font-bold py-2 px-4 shadow-lg text-xl rounded scale-95 hover:bg-primary transition duration-700 h-full;
 	}
 	.btn-toggle-active {
-		@apply bg-juanjosTeal text-white shadow-lg transition duration-700;
+		@apply shadow-lg bg-primary transition duration-700 scale-110;
 	}
 }

@@ -6,7 +6,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 
 const Footer = () => {
 	return (
-		<div className='max-w-7xl mx-auto grid md:grid-cols-2 place-items-center py-6 tracking-widest'>
+		<div className=' grid md:grid-cols-2 place-items-center py-6 tracking-widest bg-light'>
 			<Link href={'/'}>
 				<a>
 					<Logo />

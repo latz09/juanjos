@@ -4,7 +4,7 @@ import { galleryImages } from '../data/galleryImages';
 const Gallery = () => {
 	return (
 		<>
-        <h1 className="text-center py-8 text-5xl tracking-widest text-juanjosTeal ">Inspiration</h1>
+        <h1 className="text-center py-8 text-5xl tracking-widest">Inspiration</h1>
 			<div className='max-w-7xl mx-auto grid md:grid-cols-3 place-items-center md:gap-4 '>
 				{galleryImages.map((image) => (
 					<div

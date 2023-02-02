@@ -4,7 +4,7 @@ import NavLink from '../../utils/NavLink';
 
 const EventsHero = () => {
 	return (
-		<div className='relative w-full h-[60vh]'>
+		<div className='relative w-full h-[40vh] lg:h-[50vh]'>
 			<Image
 				src={hero}
 				alt=''
@@ -15,16 +15,25 @@ const EventsHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-black bg-opacity-70 px-1'>
-				<div className='text-center mt-12 text-white text-2xl lg:text-3xl tracking-widest grid gap-4'>
-					<h1 className='text-4xl lg:text-6xl text-white font-semibold '>
-						Special Events
-					</h1>
-					<p className='text-xl  max-w-4xl '>
+			<div className='relative grid items-center h-full text-light bg-[#000000]/80  '>
+				<div className='grid place-items-center gap-4 lg:gap-8 tracking-wider'>
+					<div className='grid text-center gap-4 '>
+						<div className='text-3xl lg:text-7xl text-secondary-dark'>
+							Special Events
+						</div>
+						<div className='text-xl lg:text-4xl '>
+							From birthdays to weddings -- We can help you{' '}
+							<span className='text-secondary-dark/80'>
+								{' '}
+								celebrate anything!
+							</span>
+						</div>
+					</div>
+					<div className='text-base lg:text-2xl '>
 						Contact us for your next special event!
-					</p>
-					<div className='mt-8 text-2xl'>
-						<NavLink to={'/special-events'} title={'Learn More'} />
+					</div>
+					<div>
+						<NavLink to={'/special-events'} title={'learn more'} color='blue' />
 					</div>
 				</div>
 			</div>
