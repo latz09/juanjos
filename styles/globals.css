@@ -13,7 +13,7 @@ body {
 		@apply font-bold bg-primary py-4 px-8 shadow-lg text-xl rounded-sm  hover:scale-110  text-light transition duration-700 text-center cursor-pointer w-full;
 	}
 	.btn-toggle {
-		@apply bg-secondary-dark text-light font-bold py-2 px-4 shadow-lg text-xl rounded scale-95 hover:bg-primary transition duration-700 h-full;
+		@apply bg-secondary-dark text-light font-bold py-2 px-4 shadow-lg text-lg lg:text-xl rounded scale-95 hover:bg-primary transition duration-700 h-full;
 	}
 	.btn-toggle-active {
 		@apply shadow-lg bg-primary transition duration-700 scale-110;

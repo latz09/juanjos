@@ -3,7 +3,7 @@ import Flavors from './Flavors';
 
 const MenuItemDisplay = ({ menuData }) => {
 	return (
-		<div className='py-8 '>
+		<div className=''>
 			{menuData.map((item) => (
 				<div
 					key={item.toggleName}
@@ -16,10 +16,10 @@ const MenuItemDisplay = ({ menuData }) => {
 							layout='intrinsic'
 						/>
 					</div>
-					<div className=' flex flex-col gap-8  col-span-2'>
-						<div className='text-center text-3xl md:text-5xl font-semibold tracking-widest  text-secondary-dark/50'>
+					<div className=' flex flex-col gap-8  md:col-span-2'>
+						{/* <div className='text-center text-3xl md:text-5xl font-semibold tracking-widest  text-secondary-dark/50'>
 							{item.category}
-						</div>
+						</div> */}
 						<Flavors options={item.options} />
 					</div>
 				</div>

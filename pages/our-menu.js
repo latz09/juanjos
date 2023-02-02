@@ -12,12 +12,15 @@ const Menu = () => {
 		setData(toggle);
 	}, [toggle]);
 	return (
-		<div className='grid gap-8 max-w-7xl mx-auto'>
+		<div className='grid gap-8 max-w-7xl mx-auto my-8'>
 			<ToggleMenu toggle={toggle} setToggle={setToggle} />
 
 			<MenuItemDisplay
 				menuData={services.filter((item) => item.toggleName === data)}
 			/>
+			<div className="md:hidden">
+				<ToggleMenu toggle={toggle} setToggle={setToggle} />
+			</div>
 
 			{/* <div className="w-1/4 mx-auto">
                 <NavLink to={'/contact-us'} title={'Order'} />
