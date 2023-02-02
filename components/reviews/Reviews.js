@@ -8,8 +8,8 @@ const Reviews = () => {
 				<motion.div
 					key={review.id}
 					className='h-full'
-					initial={{ opacity: 0.5, y: 100 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ y: 50 }}
+					whileInView={{ y: 0 }}
 					transition={{ duration: 0.5, delay: index * 0.2 }}
 				>
 					<Review review={review.text} name={review.name} />
@@ -45,7 +45,9 @@ const Review = ({ review, name }) => {
 					</span>
 				))}
 			</div>
-			<h1 className='lg:text-xl text-justify my-2 lg:my-4 text-dark/80'>{review}</h1>
+			<h1 className='lg:text-xl text-justify my-2 lg:my-4 text-dark/80'>
+				{review}
+			</h1>
 		</div>
 	);
 };

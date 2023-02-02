@@ -17,7 +17,7 @@ const LandingOverlayHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative flex justify-center items-center h-full bg-gradient-to-b from-primary via-primary/60 to-primary/30'>
+			<div className='relative flex justify-center items-center h-full bg-primary/40'>
 				<TextHero />
 			</div>
 		</div>
@@ -32,9 +32,9 @@ const TextHero = () => {
 			<div className='grid gap-12 lg:grid-cols-2 place-items-center'>
 				<div className='grid gap-4 place-items-center'>
 					<h1 className='text-6xl lg:text-7xl  -rotate-2 font-semibold text-center '>
-						Sweet Juanjo<span className='text-dark opacity-70'>&apos;</span>s
+						Sweet Juanjo<span className='text-secondary-dark opacity-70'>&apos;</span>s
 					</h1>
-					<div className='text-xl lg:text-2xl'>
+					<div className='hidden lg:block text-xl lg:text-2xl'>
 						<div className='flex items-center '>
 							Your Vision Made To Order{' '}
 							<span className='mx-2 text-5xl '>
@@ -51,7 +51,7 @@ const TextHero = () => {
 
 const HeroNavLinks = () => {
 	return (
-		<div className='flex  space-x-4 lg:space-x-8 w-full mx-2'>
+		<div className='grid gap-2 place-items-center sm:flex  sm:space-x-4 lg:space-x-8 sm:w-full mx-2'>
 			<NavLink to={'/our-menu'} title='Menu' color='blue'/>
 			<NavLink to={'/'} title='Contact'  />
 		</div>
