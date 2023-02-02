@@ -30,11 +30,11 @@ const TextHero = () => {
 	return (
 		<div className='grid place-items-center text-light'>
 			<div className='grid gap-12 lg:grid-cols-2 place-items-center'>
-				<div className='grid gap-4 '>
-					<h1 className='text-7xl  -rotate-2 font-semibold '>
+				<div className='grid gap-4 place-items-center'>
+					<h1 className='text-5xl lg:text-7xl  -rotate-2 font-semibold '>
 						Sweet Juanjo<span className='text-dark opacity-70'>&apos;</span>s
 					</h1>
-					<div className='text-2xl'>
+					<div className='text-lg lg:text-2xl'>
 						<div className='flex items-center '>
 							Your Vision Made To Order{' '}
 							<span className='mx-2 text-5xl text-dark '>
@@ -51,7 +51,7 @@ const TextHero = () => {
 
 const HeroNavLinks = () => {
 	return (
-		<div className='flex  space-x-8 w-full'>
+		<div className='flex  space-x-8 w-full mx-2'>
 			<NavLink to={'/our-menu'} title='Menu' color='blue'/>
 			<NavLink to={'/'} title='Contact'  />
 		</div>
