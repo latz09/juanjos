@@ -37,7 +37,7 @@ const TextHero = () => {
 					<div className='text-xl lg:text-2xl'>
 						<div className='flex items-center '>
 							Your Vision Made To Order{' '}
-							<span className='mx-2 text-5xl text-dark '>
+							<span className='mx-2 text-5xl '>
 								<GiCupcake />
 							</span>{' '}
 						</div>
