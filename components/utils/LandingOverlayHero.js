@@ -51,7 +51,7 @@ const TextHero = () => {
 
 const HeroNavLinks = () => {
 	return (
-		<div className='grid gap-2 place-items-center sm:flex  sm:space-x-4 lg:space-x-8 sm:w-full mx-2'>
+		<div className='flex  space-x-4 lg:space-x-8 sm:w-full px-2'>
 			<NavLink to={'/our-menu'} title='Menu' color='blue'/>
 			<NavLink to={'/'} title='Contact'  />
 		</div>
