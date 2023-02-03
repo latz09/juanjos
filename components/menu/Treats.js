@@ -7,7 +7,7 @@ const Treats = ({ data }) => {
 	const [treatCategory, setTreatCategory] = useState('Brownies');
 
 	return (
-		<div className='grid gap-8'>
+		<div className='grid gap-8 mt-8 lg:mt-0'>
 			<TreatsToggle
 				subCategories={data[0].subCategories}
 				setTreatCategory={setTreatCategory}
