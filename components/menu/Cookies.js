@@ -17,10 +17,10 @@ const Cookies = ({ data }) => {
 							exit={{ opacity: 0, transition: { duration: 1 } }}
 						>
 							<MenuHeading title={'Cookie flavors'} />
-							<div className='grid grid-cols-3 '>
+							<div className='grid lg:grid-cols-3 gap-8 lg:gap-0 '>
 								<CookieFlavors flavors={item.flavors} />
 
-								<div className='col-span-2'>
+								<div className='lg:col-span-2'>
 									<ImageDisplay image={item.menuImage} />
 								</div>
 							</div>
@@ -43,7 +43,7 @@ const CookieFlavors = ({ flavors }) => {
             animate={{ rotateY: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
 		>
-			<div className='grid gap-2 tracking-wider font-semibold text-right text-lg'>
+			<div className='grid gap-2 tracking-wider font-semibold text-center lg:text-right text-lg'>
 				{flavors.map((flavor, index) => (
 					<motion.div key={index}
                         initial={{ opacity: 0, scale: 0 }}

@@ -108,12 +108,10 @@ export const services = [
 	{
 		category: 'Candy and Treats',
 		toggleName: 'treats',
-		serviceImage: dippedPretzels,
-		menuImage: dippedPretzels,
-		blurb: 'All cookie flavors can be 1/2 dipped in white or milk chocolate',
-		options: [
+		subCategories: [
 			{
-				type: 'Candy Options',
+				category: 'Chocolate Covered ',
+				images: [dippedPretzels],
 				flavors: [
 					'Peanut Butter Cups',
 					'Chocolate covered Oreos',
@@ -121,34 +119,23 @@ export const services = [
 					'Chocolate Covered Pretzels',
 				],
 			},
-		],
-	},
-	{
-		serviceImage: krispies,
-		menuImage: krispies,
-		toggleName: 'rice-krispies',
-		category: 'Rice Krispie Treats',
-		blurb: 'Choose your style on a stick',
-		options: [
 			{
-				type: 'Traditional',
-				flavors: ['Includes Sprinkles'],
+				category: 'Rice Krispies ',
+				images: [krispies],
+				flavors: [
+					{
+						type: 'Traditional',
+						flavors: ['Includes Sprinkles'],
+					},
+					{
+						type: 'Half Dipped',
+						flavors: ['In white or Milk Chocolate'],
+					},
+				],
 			},
 			{
-				type: 'Half Dipped',
-				flavors: ['In white or Milk Chocolate'],
-			},
-		],
-	},
-	{
-		category: 'Brownies',
-		toggleName: 'brownies',
-		serviceImage: brownies,
-		menuImage: brownies,
-		blurb: 'something about brownies',
-		options: [
-			{
-				type: 'options',
+				category: 'Brownies',
+				images: [brownies],
 				flavors: [
 					'Chocolate or frosting drizzle',
 					'Crushed toppings as directed',

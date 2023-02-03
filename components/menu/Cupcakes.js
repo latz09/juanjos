@@ -17,7 +17,7 @@ const Cupcakes = ({ data }) => {
 							transition={{ delay: 0.2, duration: 0.5 }}
 							exit={{ opacity: 0, transition: { duration: 1 } }}
 						>
-							<MenuHeading title={'Cupcake flavors'} />
+							<MenuHeading title={' flavors'} />
 							<div className='grid lg:grid-cols-3 '>
 								<div className='order-2 lg:order-1 lg:col-span-2'>
 									<ImageDisplay image={item.menuImage} />
