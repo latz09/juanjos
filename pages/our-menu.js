@@ -9,7 +9,7 @@ import NavLink from '../components/utils/NavLink';
 import { services } from '../data/services';
 
 const Menu = () => {
-	const [toggle, setToggle] = useState('cakes');
+	const [toggle, setToggle] = useState('cupcakes');
 	
 
 	const filterData = (x) => {
