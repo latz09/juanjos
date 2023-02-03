@@ -65,7 +65,7 @@ const AboutPhoto = () => {
 				whileInView={{ scale: 1, opacity: 1 }}
 				transition={{ duration: 1.2 }}
 			>
-				<Image src={photo} alt='' />
+				<Image src={photo} alt='' priority='true'/>
 			</motion.div>
 		</div>
 	);
