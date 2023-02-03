@@ -8,7 +8,7 @@ const ImageDisplay = ({ image }) => {
 			whileInView={{ scale: 1 }}
 			transition={{ duration: 1 }}
 		>
-			<Image src={image} alt='' />
+			<Image src={image} alt='' priority='true'/>
 		</motion.div>
 	);
 };
