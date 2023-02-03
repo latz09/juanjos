@@ -113,6 +113,7 @@ export const services = [
 				category: 'Chocolate Covered ',
 				images: [dippedPretzels],
 				flavors: [
+					
 					'Peanut Butter Cups',
 					'Chocolate covered Oreos',
 					'Chocolate Covered Peanuts',
@@ -123,14 +124,8 @@ export const services = [
 				category: 'Rice Krispies ',
 				images: [krispies],
 				flavors: [
-					{
-						type: 'Traditional',
-						flavors: ['Includes Sprinkles'],
-					},
-					{
-						type: 'Half Dipped',
-						flavors: ['In white or Milk Chocolate'],
-					},
+					'Traditional: Includes Sprinkles',
+					'Half Dipped: In white or Milk Chocolate',
 				],
 			},
 			{

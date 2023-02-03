@@ -19,7 +19,7 @@ const Menu = () => {
 	
 	return (
 		<div className='grid gap-4 lg:gap-8 max-w-7xl mx-auto my-4 lg:my-8'>
-			<div className="text-center text-lg lg:text-2xl">menu</div>
+			<div className="text-center text-lg lg:text-2xl opacity-60 ">menu</div>
 			<ToggleMenu toggle={toggle} setToggle={setToggle} />
 
 			

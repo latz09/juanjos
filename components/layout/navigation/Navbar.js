@@ -27,7 +27,7 @@ const Navbar = () => {
 
 					<div
 						onClick={() => setOpen(!open)}
-						className='text-4xl text-tertiary  cursor-pointer lg:hidden grid p-4 place-items-end  '
+						className='text-3xl text-tertiary  cursor-pointer lg:hidden grid p-2 place-items-end  '
 					>
 						{!open ? (
 							<button
@@ -48,13 +48,13 @@ const Navbar = () => {
 
 					<div
 						className={`bg-primary  shadow-lg lg:shadow-none   lg:flex lg:items-center lg:col-span-3 lg:justify-between absolute lg:static lg:z-auto  left-0 w-full lg:w-auto z-20 transition-all lg:transition-none duration-700   ease-in ${
-							open ? 'top-24' : 'top-[-490px]'
+							open ? 'top-20' : 'top-[-490px]'
 						}`}
 					>
 						{navLinks.map((link) => (
 							<div
 								key={link.name}
-								className='text-lg lg:text-2xl  font-bold text-secondary py-7 text-center hover:scale-110 transition duration-700'
+								className=' lg:text-lg  font-bold text-secondary py-4 text-center hover:scale-110 transition duration-700'
 								onClick={() => setOpen(!open)}
 							>
 								<Link href={link.link}>
