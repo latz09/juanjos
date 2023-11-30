@@ -6,20 +6,14 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const MenuPreview = ({ data }) => {
-
-
-
-
- 
-
 	return (
-		<div className='grid gap-8 bg-gradient-to-b from-secondary-light/5 via-secondary-dark/20 to-secondary-dark/30'>
+		<div className='grid gap-8 '>
 			<MenuHeading />
 			<div className='grid sm:grid-cols-2  xl:grid-cols-4 gap-8 place-items-center  pt-12 pb-24 px-8'>
 				{data.map((item, index) => (
 					<div
 						key={index}
-						className='w-full h-full bg-secondary-light shadow-lg cursor-pointer hover:shadow-xl scale-95 hover:scale-100 transition duration-700'
+						className='w-full h-full shadow-lg shadow-primary/50 cursor-pointer hover:shadow-xl scale-95 hover:scale-100 transition duration-700'
 					>
 						<MenuCard title={item.category} imageToUse={item.toggleName} />
 					</div>
@@ -35,7 +29,7 @@ const MenuHeading = () => {
 	return (
 		<div className='grid gap-4 text-center'>
 			<span className='text-lg lg:text-3xl text-dark/90'>Our Menu</span>
-			<span className='text-center text-3xl md:text-4xl lg:text-7xl tracking-wider text-primary'>
+			<span className='text-center text-3xl md:text-4xl lg:text-5xl'>
 				Simple. Classic. Delicious
 			</span>
 		</div>
@@ -45,9 +39,9 @@ const MenuHeading = () => {
 const MenuCard = ({ imageToUse, title }) => {
 	return (
 		<Link href={'/our-menu'}>
-			<div className='grid gap-8 place-items-center text-lg  lg:text-2xl font-old bg-secondary-light p-8 w-full [&>*]:p-4'>
+			<div className='grid gap-8 place-items-center h-full text-lg  lg:text-2xl font-old p-8 w-full [&>*]:p-4'>
 				<ImageToUse image={imageToUse} />
-				<div className='bg-primary hover:scale-95  hover:bg-primary/70 transition duration-700  text-light py-2 px-4 h-full rounded w-2/3 sm:w-full lg:w-2/3  text-center'>
+				<div className=' hover:scale-95  hover:bg-primary/70 transition duration-700 font-bold py-2 px-4 h-full rounded   text-center '>
 					{title}
 				</div>
 			</div>
@@ -63,7 +57,7 @@ const ImageToUse = ({ image }) => {
 			transition={{ duration: 1.1, ease: 'easeInOut' }}
 		>
 			<motion.div
-				className='text-7xl lg:text-9xl  '
+				className='text-7xl lg:text-9xl text-dark  '
 				initial={{ scale: 0.93 }}
 				animate={{ scale: 1 }}
 				transition={{
@@ -73,10 +67,10 @@ const ImageToUse = ({ image }) => {
 					repeatType: 'mirror',
 				}}
 			>
-				{image === 'cakes' && <MdCake />}
-				{image === 'cupcakes' && <GiCupcake />}
+				{image === 'cakes' && <MdCake  />}
+				{image === 'cupcakes' && <GiCupcake className="text-primary"/>}
 				{image === 'cookies' && <FaCookieBite />}
-				{image === 'candy' && <TbCandy />}
+				{image === 'candy' && <TbCandy className="text-primary"/>}
 			</motion.div>
 		</motion.div>
 	);

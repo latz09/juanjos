@@ -11,11 +11,10 @@ module.exports = {
 			cinzel: ['Cinzel', 'serif'],
 		},
 		colors: {
-			dark: '#1D3150',
-			light: '#FFFBE8',
-			primary: '#FF3A54',		
-			'secondary-light': '#BBE9DF',
-			'secondary-dark': '#00C9C1',
+			dark: '#001E1D',
+			light: '#F2FFFF',
+			primary: '#00C9C1',		
+			
 			
 		},
 	},

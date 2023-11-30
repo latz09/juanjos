@@ -12,7 +12,7 @@ import Reviews from '../components/reviews/Reviews';
 
 export default function Home() {
 	return (
-		<div className='grid gap-16 mb-44'>
+		<div className='grid gap-24 pb-44 bg-light'>
 			<LandingHero />
 			<MenuPreview data={menuPreview} />
 			<AboutBlurb />

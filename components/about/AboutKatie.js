@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AboutKatie = () => {
 	return (
-		<div className='grid lg:grid-cols-3 gap-8 lg:gap-16 max-w-7xl mx-auto  w-full   '>
+		<div className='grid lg:grid-cols-3 gap-8 lg:gap-16 max-w-7xl mx-auto  w-full bgli  '>
 			<AboutPhoto />
 
 			<KatieAbout />
@@ -23,7 +23,7 @@ const KatieAbout = () => {
 				<span className='font-semibold text-primary'> Sweet Juanjo&apos;s</span>
 				!
 			</div>
-			<div className='grid gap-6 text-lg lg:text-2xl text-dark/90 lg:ml-8 text-justify'>
+			<div className='grid gap-2 text-lg lg:text-xl text-dark/90  text-justify '>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
@@ -41,9 +41,9 @@ const KatieAbout = () => {
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
 					viverra adipiscing at in tellus integer.
 				</p>
-				<div className='lg:w-1/2 mx-auto'>
+				{/* <div className='lg:w-1/2 mx-auto'>
 					<NavLink to={'/ '} title={'Read more about our story'} color='blue' />
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
@@ -51,7 +51,7 @@ const KatieAbout = () => {
 
 const AboutPhoto = () => {
 	return (
-		<div className='grid gap-4 text-center lg:text-start'>
+		<div className='grid gap-16 text-center lg:text-start'>
 			<div className='grid gap-2'>
 				<span className='text-6xl text-secondary-dark'>Meet Jo</span>
 				<span className='text-3xl text-primary trackingwidest'>

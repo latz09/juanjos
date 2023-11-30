@@ -4,7 +4,7 @@ import NavLink from '../../utils/NavLink';
 
 const EventsHero = () => {
 	return (
-		<div className='relative w-full h-[40vh] lg:h-[50vh]'>
+		<div className='relative w-full h-[60vh] lg:h-[80vh]'>
 			<Image
 				src={hero}
 				alt=''
@@ -15,9 +15,9 @@ const EventsHero = () => {
 				placeholder='blur'
 			/>
 
-			<div className='relative grid items-center h-full text-light bg-[#000000]/80  '>
-				<div className='grid place-items-center gap-4 lg:gap-8 tracking-wider'>
-					<div className='grid text-center gap-4 '>
+			<div className='relative grid items-center h-full text-light bg-dark/80 '>
+				<div className='grid place-items-center gap-2 tracking-wider'>
+					<div className='grid text-center gap-2 '>
 						<div className='text-3xl lg:text-7xl text-secondary-dark'>
 							Special Events
 						</div>
@@ -29,7 +29,7 @@ const EventsHero = () => {
 							</span>
 						</div>
 					</div>
-					<div className='text-base lg:text-2xl '>
+					<div className='text-base lg:text-2xl my-4 '>
 						Contact us for your next special event!
 					</div>
 					<div>

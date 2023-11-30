@@ -32,7 +32,7 @@ const CookieHero = () => {
 					Did someone say <span className=' text-primary'>cookies!?</span>
 				</h1>
 
-				<NavLink to={'/our-menu'} title={'Flavor Menu Here!'} color='blue' />
+				{/* <NavLink to={'/our-menu'} title={'Flavor Menu Here!'} /> */}
 			</div>
 		</div>
 	);

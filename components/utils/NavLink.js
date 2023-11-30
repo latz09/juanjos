@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NavLink = ({ to, title, color }) => {
 	return (
-		<div className={`nav-link ${color === 'blue' && 'bg-secondary-dark'} `}>
+		<div className='nav-link'>
 			<Link href={to}>
 				<a >{title}</a>
 			</Link>

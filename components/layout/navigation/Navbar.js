@@ -12,7 +12,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className='w-full  top-0 left-0 z-10 bg-primary text-light tracking-wider '>
+		<div className='w-full  top-0 left-0 z-10  tracking-wider py-6 px-4 '>
 			<div className='max-w-7xl mx-auto'>
 				{/* <div className='max-w-7xl mx-auto grid grid-cols-5 items-center justify-items-between   lg:px-10 px-2 text-juanjosTeal tracking-widest'> */}
 					{/* <Link href={'/'}>
@@ -47,7 +47,7 @@ const Navbar = () => {
 					</div>
 
 					<div
-						className={`bg-primary  shadow-lg lg:shadow-none   lg:flex lg:items-center lg:col-span-3 lg:justify-between absolute lg:static lg:z-auto  left-0 w-full lg:w-auto z-20 transition-all lg:transition-none duration-700   ease-in ${
+						className={` shadow-lg lg:shadow-none   lg:flex lg:items-center lg:col-span-3 lg:justify-between absolute lg:static lg:z-auto  left-0 w-full lg:w-auto z-20 transition-all lg:transition-none duration-700   ease-in ${
 							open ? 'top-20' : 'top-[-490px]'
 						}`}
 					>
